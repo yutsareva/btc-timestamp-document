@@ -1,0 +1,5 @@
+argparse==1.4.0
+bitcoinlib==0.6.4
+qrcode==7.3.1
+Pillow==9.0.1
+hashlib

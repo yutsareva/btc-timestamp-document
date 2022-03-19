@@ -1,6 +1,6 @@
 # Bitcoin timestamp document
 
-Creates a bitcoin zero value transaction with metadata. The metadata contains document hash and owner name.
+Creates a bitcoin zero value transaction with metadata. The metadata contains document hash and author name.
 
 How to run:
 ```bash
@@ -11,8 +11,8 @@ QR code for tx '6f873f255d6649daf3d8f83b454ff59793c4c46db631485d6f2c4f53d17ffc56
 <img src="6f873.png" alt="drawing" width="200"/>
 
 To decrypt data stored in transacation:
-1. Scan QR code
-2. Open the link> E.g. https://www.blockchain.com/en/btc-testnet/tx/6f873f255d6649daf3d8f83b454ff59793c4c46db631485d6f2c4f53d17ffc56
+1. Scan received QR code
+2. Open the link. E.g. https://www.blockchain.com/en/btc-testnet/tx/6f873f255d6649daf3d8f83b454ff59793c4c46db631485d6f2c4f53d17ffc56
 3. Find Outputs section
 4. Get Pkscript hex-string
 5. Run decrypt script:

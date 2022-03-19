@@ -6,13 +6,6 @@ from bitcoinlib.transactions import Output, Transaction, Input
 import binascii
 
 
-def bytes_padding(temp_no):
-    if len(temp_no)/2 != 0:
-        return '0' + temp_no
-    else:
-        return temp_no
-
-
 def _print_wallet_debug_info(private_key, network):
     if wallet_delete_if_exists('wallet', force=True): pass
     w = Wallet.create('wallet', keys=private_key, scheme='single', network=network)
@@ -25,10 +18,11 @@ def _bin_to_hex(string):
 
 
 def _create_locking_script(data, author_name):
+    print(data)
     text_from_bytes = bytearray.fromhex(data) + bytes(author_name, 'utf-8')
     if len(text_from_bytes) > 75:
         raise Exception('Your name is too long')
-    payload = bytearray((len(text_from_bytes),))+text_from_bytes
+    payload = bytearray((len(text_from_bytes),)) + text_from_bytes
     locking_script = '6a' + _bin_to_hex(payload)
     return locking_script
 

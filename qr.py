@@ -3,7 +3,7 @@ from PIL import Image
 
 
 def create_qr_code(tx_id):
-    url = f"https://www.blockchain.com/ru/search?search={tx_id}"
+    url = f"https://www.blockchain.com/search?search={tx_id}"
     img = qrcode.make(url)
     file_name = f"{tx_id[:5]}.png"
     img.save(file_name)

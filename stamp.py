@@ -21,5 +21,5 @@ def main():
     create_qr_code(tx_result['txid'])
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

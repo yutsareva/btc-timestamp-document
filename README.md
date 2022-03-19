@@ -10,7 +10,7 @@ QR code for tx '6f873f255d6649daf3d8f83b454ff59793c4c46db631485d6f2c4f53d17ffc56
 
 <img src="6f873.png" alt="drawing" width="200"/>
 
-To decrypt data stored in transacation:
+To decrypt data stored in the transaction:
 1. Scan received QR code
 2. Open the link. E.g. https://www.blockchain.com/en/btc-testnet/tx/6f873f255d6649daf3d8f83b454ff59793c4c46db631485d6f2c4f53d17ffc56
 3. Find Outputs section

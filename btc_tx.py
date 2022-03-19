@@ -36,7 +36,7 @@ def create_tx(private_key, network, data, author_name):
     srv = Service(network)
     utxos = srv.getutxos(address)
     if not utxos:
-        print("You do not have unspent transaction outputs")
+        print('You do not have unspent transaction outputs')
         return None
     # print(utxos)
 
@@ -44,8 +44,8 @@ def create_tx(private_key, network, data, author_name):
 
     output = Output(network=network, value=0, address=address, lock_script=lock_script)
     input = Input(
-        utxos[0]["txid"],
-        utxos[0]["output_n"],
+        utxos[0]['txid'],
+        utxos[0]['output_n'],
         network=network
     )
     tx = Transaction(inputs=[input], outputs=[output])

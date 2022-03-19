@@ -9,5 +9,3 @@ def create_qr_code(tx_id):
     img.save(file_name)
     print(f"QR code for tx '{tx_id}' was saved to file {file_name}")
     Image.open(file_name).show()
-
-

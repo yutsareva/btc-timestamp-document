@@ -21,6 +21,4 @@ python3 decrypt.py --pkscript cf89a9f87fe17438bfc10b98c40d6d590948df0a0e943555fd
 Document hash: cf89a9f87fe17438bfc10b98c40d6d590948df0a0e943555fda992171d60376d
 Author name: yulia tsareva
 ```
-
-
-
+6. Pay attention to the received time (2022-03-19 14:30)

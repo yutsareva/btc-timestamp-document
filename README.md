@@ -4,7 +4,12 @@ Creates a bitcoin zero value transaction with metadata. The metadata contains do
 
 How to run:
 ```bash
-python3 stamp.py --private-key=925hizLyDqen4gsCFeCXFWLXPC7BGQRR4ngA76Usjgb6ABiz59j --file=picture.png --name="yulia tsareva" --network=testnet
+python3 stamp.py \
+  --private-key=925hizLyDqen4gsCFeCXFWLXPC7BGQRR4ngA76Usjgb6ABiz59j \
+  --file=picture.png \
+  --name="yulia tsareva" \
+  --network=testnet
+
 QR code for tx '6f873f255d6649daf3d8f83b454ff59793c4c46db631485d6f2c4f53d17ffc56' was saved to file 6f873.png
 ```
 
@@ -17,8 +22,10 @@ To decrypt data stored in the transaction:
 4. Get Pkscript hex-string
 5. Run decrypt script:
 ```bash
-python3 decrypt.py --pkscript cf89a9f87fe17438bfc10b98c40d6d590948df0a0e943555fda992171d60376d79756c69612074736172657661
+python3 decrypt.py \
+  --pkscript cf89a9f87fe17438bfc10b98c40d6d590948df0a0e943555fda992171d60376d79756c69612074736172657661
+
 Document hash: cf89a9f87fe17438bfc10b98c40d6d590948df0a0e943555fda992171d60376d
 Author name: yulia tsareva
 ```
-6. Pay attention to the received time (2022-03-19 14:30)
+6. Pay attention to the "Received Time" field (2022-03-19 14:30) and status ("Confirmed" is expected)
